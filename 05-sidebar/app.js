@@ -1,0 +1,11 @@
+sidebarToggle = document.querySelector('.sidebar-toggle');
+sidebar = document.querySelector('.sidebar');
+closeBtn = document.querySelector('.close-btn');
+
+sidebarToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('show-sidebar');
+});
+
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('show-sidebar');
+})
